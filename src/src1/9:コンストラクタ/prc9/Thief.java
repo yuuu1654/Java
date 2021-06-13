@@ -1,11 +1,10 @@
 public class Thief {
-  //フィールドの設定
+  //フィールド
   String name;
   int hp;
   int mp;
 
-  //コンストラクタの定義
-  //引数3つを受け取りインスタンス化する
+  //コンストラクタ
   public Thief(String name, int hp, int mp){
     this.name = name;
     this.hp = hp;
@@ -13,14 +12,12 @@ public class Thief {
   }
 
   public Thief(String name, int hp){
-    // 他のコンストラクタを呼び出してコードの重複をなくす
     this(name, hp, 5);
   }
 
   public Thief(String name){
-    // 他のコンストラクタを呼び出してコードの重複をなくす
     this(name, 40, 5);
   }
 
-
+  //name(引数)が無い場合はインスタンス化出来ないものとする
 }
